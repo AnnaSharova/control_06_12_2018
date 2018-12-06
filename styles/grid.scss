@@ -14,8 +14,9 @@
         grid-template-areas: "_3 _2 _1"
                              "_6 _5 _4"
                              "_9 _8 _7";
+        animation: grid 2s ease infinite;
     }
-    #cell {
+    .cell {
         border: 2px solid #070806;
         border-radius: 5%;
 
@@ -45,5 +46,17 @@
         }
         &:nth-child(9) {
             grid-area: _9;
+        }
+    }
+    @keyframes grid {
+        from {
+            grid-template-areas: "_1 _2 _3"
+                                 "_4 _5 _6"
+                                 "_7 _8 _9";
+        }
+        to {
+            grid-template-areas: "_3 _2 _1"
+                                 "_6 _5 _4"
+                                 "_9 _8 _7";
         }
     }
