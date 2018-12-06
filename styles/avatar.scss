@@ -1,0 +1,34 @@
+#circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg');
+    position: relative;
+    background-size: cover;
+}
+#hexagon {
+    width: 100px;
+    height: 55px;
+    background: rgba(229, 255, 0, 0.925);
+    position: relative;
+    margin: 40px auto;
+    position: absolute;
+}
+
+#hexagon:before {
+    content: " ";
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    transform: rotate(60deg);
+    background: rgba(229, 255, 0, 0.925);
+}
+
+#hexagon:after {
+    content: " ";
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    transform: rotate(-60deg);
+    background: rgba(229, 255, 0, 0.925);
+}
